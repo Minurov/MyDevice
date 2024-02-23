@@ -21,9 +21,9 @@ class MainActivity : AppCompatActivity() {
 
     @SuppressLint("SetTextI18n")
     override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        binding.user = _user_
+        super.onCreate(savedInstanceState)        
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
+        binding.user = _user_
         binding.user=user
         binding.button.setOnClickListener {
             chengeValue()
